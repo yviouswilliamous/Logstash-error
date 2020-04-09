@@ -1,0 +1,106 @@
+logstash    | [2020-04-08T18:15:42,960][INFO ][logstash.outputs.file    ][rawweb] Closing file /output/web_data.json
+logstash    | [2020-04-08T18:15:43,353][ERROR][org.logstash.Logstash    ] java.lang.OutOfMemoryError: Java heap space
+logstash    | [2020-04-08T18:15:43,367][ERROR][org.logstash.execution.WorkerLoop][rawclient] Exception in pipelineworker, the pipeline stopped processing new events, please check your filter configuration and restart Logstash.
+logstash    | org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.inspector.awesome(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/inspector.rb:117) ~[?:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.core_ext.kernel.ai(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/core_ext/kernel.rb:10) ~[?:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode_default(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:39) ~[?:?]
+logstash    |   at org.jruby.RubyMethod.call(org/jruby/RubyMethod.java:120) ~[jruby-complete-9.2.9.0.jar:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:35) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48) ~[?:?]
+logstash    |   at org.jruby.RubyArray.each(org/jruby/RubyArray.java:1814) ~[jruby-complete-9.2.9.0.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:38) ~[?:?]
+logstash    |   at org.logstash.instrument.metrics.AbstractSimpleMetricExt.time(org/logstash/instrument/metrics/AbstractSimpleMetricExt.java:45) ~[logstash-core.jar:?]
+logstash    |   at org.logstash.instrument.metrics.AbstractNamespacedMetricExt.time(org/logstash/instrument/metrics/AbstractNamespacedMetricExt.java:44) ~[logstash-core.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:37) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.outputs.base.multi_receive(/usr/share/logstash/logstash-core/lib/logstash/outputs/base.rb:87) ~[?:?]
+logstash    |   at org.logstash.config.ir.compiler.OutputStrategyExt$AbstractOutputStrategyExt.multi_receive(org/logstash/config/ir/compiler/OutputStrategyExt.java:118) ~[logstash-core.jar:?]
+logstash    |   at org.logstash.config.ir.compiler.AbstractOutputDelegatorExt.multi_receive(org/logstash/config/ir/compiler/AbstractOutputDelegatorExt.java:101) ~[logstash-core.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262) ~[?:?]
+logstash    | [2020-04-08T18:15:43,366][ERROR][org.logstash.execution.WorkerLoop][rawweb] Exception in pipelineworker, the pipeline stopped processing new events, please check your filter configuration and restart Logstash.
+logstash    | org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.inspector.awesome(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/inspector.rb:117) ~[?:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.core_ext.kernel.ai(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/core_ext/kernel.rb:10) ~[?:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode_default(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:39) ~[?:?]
+logstash    |   at org.jruby.RubyMethod.call(org/jruby/RubyMethod.java:120) ~[jruby-complete-9.2.9.0.jar:?]
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:35) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48) ~[?:?]
+logstash    |   at org.jruby.RubyArray.each(org/jruby/RubyArray.java:1814) ~[jruby-complete-9.2.9.0.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:38) ~[?:?]
+logstash    |   at org.logstash.instrument.metrics.AbstractSimpleMetricExt.time(org/logstash/instrument/metrics/AbstractSimpleMetricExt.java:45) ~[logstash-core.jar:?]
+logstash    |   at org.logstash.instrument.metrics.AbstractNamespacedMetricExt.time(org/logstash/instrument/metrics/AbstractNamespacedMetricExt.java:44) ~[logstash-core.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:37) ~[?:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.outputs.base.multi_receive(/usr/share/logstash/logstash-core/lib/logstash/outputs/base.rb:87) ~[?:?]
+logstash    |   at org.logstash.config.ir.compiler.OutputStrategyExt$AbstractOutputStrategyExt.multi_receive(org/logstash/config/ir/compiler/OutputStrategyExt.java:118) ~[logstash-core.jar:?]
+logstash    |   at org.logstash.config.ir.compiler.AbstractOutputDelegatorExt.multi_receive(org/logstash/config/ir/compiler/AbstractOutputDelegatorExt.java:101) ~[logstash-core.jar:?]
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262) ~[?:?]
+logstash    | warning: thread "[rawweb]>worker2" terminated with exception (report_on_exception is true):
+logstash    | warning: thread "[rawclient]>worker1" terminated with exception (report_on_exception is true):
+logstash    | java.lang.IllegalStateException: org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at org.logstash.execution.WorkerLoop.run(org/logstash/execution/WorkerLoop.java:85)
+logstash    |   at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+logstash    |   at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(jdk/internal/reflect/NativeMethodAccessorImpl.java:62)
+logstash    |   at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(jdk/internal/reflect/DelegatingMethodAccessorImpl.java:43)
+logstash    |   at java.lang.reflect.Method.invoke(java/lang/reflect/Method.java:566)
+logstash    |   at org.jruby.javasupport.JavaMethod.invokeDirectWithExceptionHandling(org/jruby/javasupport/JavaMethod.java:441)
+logstash    |   at org.jruby.javasupport.JavaMethod.invokeDirect(org/jruby/javasupport/JavaMethod.java:305)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262)
+logstash    |   at org.jruby.RubyProc.call(org/jruby/RubyProc.java:274)
+logstash    |   at java.lang.Thread.run(java/lang/Thread.java:834)
+logstash    | Caused by: org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.inspector.awesome(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/inspector.rb:117)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.core_ext.kernel.ai(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/core_ext/kernel.rb:10)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode_default(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:39)
+logstash    |   at org.jruby.RubyMethod.call(org/jruby/RubyMethod.java:120)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:35)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48)
+logstash    |   at org.jruby.RubyArray.each(org/jruby/RubyArray.java:1814)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:38)
+logstash    |   at org.logstash.instrument.metrics.AbstractSimpleMetricExt.time(org/logstash/instrument/metrics/AbstractSimpleMetricExt.java:45)
+logstash    |   at org.logstash.instrument.metrics.AbstractNamespacedMetricExt.time(org/logstash/instrument/metrics/AbstractNamespacedMetricExt.java:44)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:37)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.outputs.base.multi_receive(/usr/share/logstash/logstash-core/lib/logstash/outputs/base.rb:87)
+logstash    |   at org.logstash.config.ir.compiler.OutputStrategyExt$AbstractOutputStrategyExt.multi_receive(org/logstash/config/ir/compiler/OutputStrategyExt.java:118)
+logstash    |   at org.logstash.config.ir.compiler.AbstractOutputDelegatorExt.multi_receive(org/logstash/config/ir/compiler/AbstractOutputDelegatorExt.java:101)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262)
+logstash    | java.lang.IllegalStateException: org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at org.logstash.execution.WorkerLoop.run(org/logstash/execution/WorkerLoop.java:85)
+logstash    |   at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+logstash    |   at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(jdk/internal/reflect/NativeMethodAccessorImpl.java:62)
+logstash    |   at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(jdk/internal/reflect/DelegatingMethodAccessorImpl.java:43)
+logstash    |   at java.lang.reflect.Method.invoke(java/lang/reflect/Method.java:566)
+logstash    |   at org.jruby.javasupport.JavaMethod.invokeDirectWithExceptionHandling(org/jruby/javasupport/JavaMethod.java:426)
+logstash    |   at org.jruby.javasupport.JavaMethod.invokeDirect(org/jruby/javasupport/JavaMethod.java:293)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262)
+logstash    |   at org.jruby.RubyProc.call(org/jruby/RubyProc.java:274)
+logstash    |   at java.lang.Thread.run(java/lang/Thread.java:834)
+logstash    | Caused by: org.jruby.exceptions.NoMethodError: (NoMethodError) undefined method `pop' for nil:NilClass
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.inspector.awesome(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/inspector.rb:117)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.awesome_print_minus_1_dot_7_dot_0.lib.awesome_print.core_ext.kernel.ai(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/awesome_print-1.7.0/lib/awesome_print/core_ext/kernel.rb:10)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode_default(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:39)
+logstash    |   at org.jruby.RubyMethod.call(org/jruby/RubyMethod.java:120)
+logstash    |   at usr.share.logstash.vendor.bundle.jruby.$2_dot_5_dot_0.gems.logstash_minus_codec_minus_rubydebug_minus_3_dot_0_dot_6.lib.logstash.codecs.rubydebug.encode(/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-codec-rubydebug-3.0.6/lib/logstash/codecs/rubydebug.rb:35)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48)
+logstash    |   at org.jruby.RubyArray.each(org/jruby/RubyArray.java:1814)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.base.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/base.rb:48)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:38)
+logstash    |   at org.logstash.instrument.metrics.AbstractSimpleMetricExt.time(org/logstash/instrument/metrics/AbstractSimpleMetricExt.java:45)
+logstash    |   at org.logstash.instrument.metrics.AbstractNamespacedMetricExt.time(org/logstash/instrument/metrics/AbstractNamespacedMetricExt.java:44)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.codecs.delegator.multi_encode(/usr/share/logstash/logstash-core/lib/logstash/codecs/delegator.rb:37)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.outputs.base.multi_receive(/usr/share/logstash/logstash-core/lib/logstash/outputs/base.rb:87)
+logstash    |   at org.logstash.config.ir.compiler.OutputStrategyExt$AbstractOutputStrategyExt.multi_receive(org/logstash/config/ir/compiler/OutputStrategyExt.java:118)
+logstash    |   at org.logstash.config.ir.compiler.AbstractOutputDelegatorExt.multi_receive(org/logstash/config/ir/compiler/AbstractOutputDelegatorExt.java:101)
+logstash    |   at usr.share.logstash.logstash_minus_core.lib.logstash.java_pipeline.start_workers(/usr/share/logstash/logstash-core/lib/logstash/java_pipeline.rb:262)
+logstash    | Exception in thread "[rawweb]>worker2" Exception in thread "[rawclient]>worker1" java.lang.NullPointerException
+logstash    |   at org.jruby.internal.runtime.ThreadService.getMainThread(ThreadService.java:232)
+logstash    |   at org.jruby.RubyThread.exceptionRaised(RubyThread.java:1823)
+logstash    |   at org.jruby.internal.runtime.RubyRunnable.run(RubyRunnable.java:112)
+logstash    |   at java.base/java.lang.Thread.run(Thread.java:834)
+logstash    | java.lang.NullPointerException
+logstash    |   at org.jruby.internal.runtime.ThreadService.getMainThread(ThreadService.java:232)
+logstash    |   at org.jruby.RubyThread.exceptionRaised(RubyThread.java:1823)
+logstash    |   at org.jruby.internal.runtime.RubyRunnable.run(RubyRunnable.java:112)
+logstash    |   at java.base/java.lang.Thread.run(Thread.java:834)
